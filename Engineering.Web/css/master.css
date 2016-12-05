@@ -1,0 +1,175 @@
+﻿/*#region Colors*/
+/*#endregion*/
+/*#region Header*/
+header .logo img {
+  display: table !important;
+  width: 105px;
+  height: 70px;
+  margin: 0 auto;
+}
+.tp-bullets.preview4 {
+  height: 160px;
+}
+.tp-bullets.preview4 .bullet {
+  margin: 0 10px;
+  background-color: #fff !important;
+}
+.tp-bullets.preview4 .bullet:hover,
+.tp-bullets.preview4 .bullet.selected {
+  background-color: #ffbe00 !important;
+}
+.tp-bullets.preview4 .bullet,
+.tp-bullets.preview4 .bullet:hover,
+.tp-bullets.preview4 .bullet.selected {
+  width: 10px !important;
+  height: 10px !important;
+  border: none !important;
+}
+.top-info .personal-info li .call-icon {
+  width: 10px;
+  height: 10px;
+  background: url('../images/sprite.svg') 0px 0px no-repeat;
+}
+/*#endregion*/
+/*#region Footer*/
+.sub-footer {
+  background-color: #141719 !important;
+}
+.sub-footer .logo-container {
+  padding: 22px 0px;
+}
+.sub-footer .logo-container .footer-logo {
+  width: 100px;
+  height: 70px;
+  background: url('../images/footer-logo.svg') center center no-repeat;
+}
+.sub-footer ul {
+  border-right: none !important;
+}
+.sub-footer ul li {
+  border-color: #202527;
+}
+.sub-footer ul li:first-child {
+  border-left: none;
+}
+.sub-footer ul li .icon {
+  background-color: #202527;
+}
+.rights {
+  background-color: #111315 !important;
+}
+.rights p {
+  text-transform: uppercase;
+}
+/*#endregion*/
+/*#region Contact form*/
+.contact-page {
+  background-color: #f7f7f7;
+}
+.contact-page .contact-container {
+  width: 1010px;
+}
+.contact-page .contact-container .heading {
+  margin: 0 auto;
+  display: table;
+}
+.contact-page .contact-container .heading hr {
+  margin: 30px 90px;
+}
+.contact-page .contact-container .content {
+  margin: 0 auto;
+  display: table;
+}
+.contact-page .contact-container .send-btn {
+  margin: 35px auto 0;
+  display: table;
+}
+/*#endregion*/
+/*#region Home page*/
+.welcome {
+  background: url('../images/welcome-bck.jpg') center center no-repeat;
+  background-size: cover;
+}
+.welcome .welcome-content {
+  background-color: #fff;
+  height: 255px;
+}
+.welcome .our-expertise {
+  background-color: #fff;
+}
+.welcome .our-expertise li {
+  margin: 15px 0;
+}
+.welcome .our-expertise .expertise-title {
+  margin: 0;
+  text-transform: uppercase;
+}
+.welcome .our-expertise .media-body {
+  position: relative;
+}
+.welcome .our-expertise .media-body .expertise {
+  position: absolute;
+  top: 50%;
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  line-height: 15px;
+}
+.gallery {
+  background: url('../images/gallery-bck.jpg') center center no-repeat !important;
+  background-size: cover !important;
+}
+.gallery .filter ul li {
+  text-transform: uppercase;
+}
+/*#endregion*/
+/*#region About us*/
+.about-header {
+  background: url('../images/about-bck.jpg') center center no-repeat !important;
+  background-size: cover !important;
+}
+.introduction {
+  background: url('../images/about-bck2.jpg') center center no-repeat;
+  background-size: cover;
+}
+.introduction .introduction-box {
+  background-color: #fff;
+}
+.introduction .introduction-box h6 {
+  position: absolute;
+  top: 50%;
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  margin: 0;
+}
+/*#endregion*/
+/*#region About us*/
+.services-header {
+  background: url('../images/services-bck.jpg') center center no-repeat;
+  background-size: cover;
+}
+.our-services {
+  background: url('../images/services-bck2.jpg') center center no-repeat;
+  background-size: cover;
+}
+.our-services .news-content {
+  height: 360px;
+  margin-bottom: 30px;
+  background-color: #fff;
+}
+/*#endregion*/
+/*#region FAQ*/
+.faq-header {
+  background: url('../images/faq-bck.jpg') center center no-repeat;
+  background-size: cover;
+}
+.faqs {
+  background: url('../images/faq-bck2.jpg') center center no-repeat;
+  background-size: cover;
+}
+/*#endregion*/

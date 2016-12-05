@@ -1,0 +1,233 @@
+﻿/*#region Colors*/
+@w: #fff;
+@yellow: #ffbe00;
+@b: #000;
+/*#endregion*/
+
+/*#region Header*/
+header {
+    .logo {
+        img {
+            display: table !important;
+            width: 105px;
+            height: 70px;
+            margin: 0 auto;
+        }
+    }
+}
+
+.tp-bullets {
+    &.preview4 {
+        height: 160px;
+
+        .bullet {
+            margin: 0 10px;
+            background-color: @w !important;
+        }
+
+        .bullet:hover,
+        .bullet.selected {
+            background-color: @yellow !important;
+        }
+
+        .bullet,
+        .bullet:hover,
+        .bullet.selected {
+            width: 10px !important;
+            height: 10px !important;
+            border: none !important;
+        }
+    }
+}
+
+.top-info {
+    .personal-info {
+        li {
+            .call-icon {
+                width: 10px;
+                height: 10px;
+                background: url('../images/sprite.svg') 0px 0px no-repeat;
+            }
+        }
+    }
+}
+/*#endregion*/
+
+/*#region Footer*/
+.sub-footer {
+    background-color: #141719 !important;
+
+    .logo-container {
+        padding: 22px 0px;
+
+        .footer-logo {
+            width: 100px;
+            height: 70px;
+            background: url('../images/footer-logo.svg') center center no-repeat;
+        }
+    }
+
+    ul {
+        border-right: none !important;
+
+        li {
+            border-color: #202527;
+
+            &:first-child {
+                border-left: none;
+            }
+
+            .icon {
+                background-color: #202527;
+            }
+        }
+    }
+}
+
+.rights {
+    background-color: #111315 !important;
+
+    p {
+        text-transform: uppercase;
+    }
+}
+/*#endregion*/
+
+/*#region Contact form*/
+.contact-page {
+    background-color: #f7f7f7;
+
+    .contact-container {
+        width: 1010px;
+
+        .heading {
+            margin: 0 auto;
+            display: table;
+
+            hr {
+                margin: 30px 90px;
+            }
+        }
+
+        .content {
+            margin: 0 auto;
+            display: table;
+        }
+
+        .send-btn {
+            margin: 35px auto 0;
+            display: table;
+        }
+    }
+}
+/*#endregion*/
+
+/*#region Home page*/
+.welcome {
+    background: url('../images/welcome-bck.jpg') center center no-repeat;
+    background-size: cover;
+
+    .welcome-content {
+        background-color: @w;
+        height: 255px;
+    }
+
+    .our-expertise {
+        background-color: @w;
+
+        li {
+            margin: 15px 0;
+        }
+
+        .expertise-title {
+            margin: 0;
+            text-transform: uppercase;
+        }
+
+        .media-body {
+            position: relative;
+
+            .expertise {
+                position: absolute;
+                top: 50%;
+                -moz-transform: translateY(-50%);
+                -ms-transform: translateY(-50%);
+                -o-transform: translateY(-50%);
+                -webkit-transform: translateY(-50%);
+                transform: translateY(-50%);
+                line-height: 15px;
+            }
+        }
+    }
+}
+
+.gallery {
+    background: url('../images/gallery-bck.jpg') center center no-repeat !important;
+    background-size: cover !important;
+
+    .filter {
+        ul {
+            li {
+                text-transform: uppercase;
+            }
+        }
+    }
+}
+/*#endregion*/
+
+/*#region About us*/
+.about-header {
+    background: url('../images/about-bck.jpg') center center no-repeat !important;
+    background-size: cover !important;
+}
+
+.introduction {
+    background: url('../images/about-bck2.jpg') center center no-repeat;
+    background-size: cover;
+
+    .introduction-box {
+        background-color: @w;
+
+        h6 {
+            position: absolute;
+            top: 50%;
+            -moz-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            -o-transform: translateY(-50%);
+            -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+            margin: 0;
+        }
+    }
+}
+/*#endregion*/
+
+/*#region About us*/
+.services-header {
+    background: url('../images/services-bck.jpg') center center no-repeat;
+    background-size: cover;
+}
+
+.our-services {
+    background: url('../images/services-bck2.jpg') center center no-repeat;
+    background-size: cover;
+
+    .news-content {
+        height: 360px;
+        margin-bottom: 30px;
+        background-color: @w;
+    }
+}
+/*#endregion*/
+
+/*#region FAQ*/
+.faq-header {
+    background: url('../images/faq-bck.jpg') center center no-repeat;
+    background-size: cover;
+}
+
+.faqs {
+    background: url('../images/faq-bck2.jpg') center center no-repeat;
+    background-size: cover;
+}
+/*#endregion*/
