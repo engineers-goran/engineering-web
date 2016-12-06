@@ -19,8 +19,11 @@
     <link href="css/ionicons.min.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-    <link href="css/responsive.css" rel="stylesheet">
     <link href="css/master.min.css" rel="stylesheet" />
+    <link href="css/responsive.css" rel="stylesheet">
+
+    <!--favicon-->
+    <link rel="icon" type="image/png" sizes="96x96" href="../images/favicon/favicon-96x96.png">
 
     <!-- Online Fonts -->
     <link href='https://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
@@ -41,26 +44,20 @@
         <!-- header -->
         <div class="container relative">
             <header>
-                <div class="logo"> <a href="#."><img class="img-responsive" src="images/engineering-logo.svg" alt=""></a> </div>
+                <div class="logo"> <a href="index.html"><img class="img-responsive" src="images/engineering-logo.svg" alt=""></a> </div>
                 <!-- Top bar -->
                 <div class="top-bar">
                     <div class="top-info">
                         <ul class="personal-info">
                             <li>
-                                <p><i class="fa fa-phone"></i> + 124 45 78 678 </p>
+                                <p><div class="call-icon"></div> + 124 45 78 678 </p>
                             </li>
                             <li>
-                                <p><i class="fa fa-envelope-o"></i> Support@mail.com </p>
+                                <p><div class="email-icon"></div> engineering@mail.com </p>
                             </li>
                             <li>
-                                <p><i class="fa fa-clock-o"></i> Mon - Fri : 08.00 - 17.00 </p>
+                                <p><div class="time-icon"></div> Mon - Fri : 08.00 - 17.00 </p>
                             </li>
-                        </ul>
-                        <ul class="social">
-                            <li><a href="#."><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#."><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="#."><i class="fa fa-google"></i></a></li>
-                            <li><a href="#."><i class="fa fa-linkedin"></i></a></li>
                         </ul>
                     </div>
 
@@ -70,13 +67,21 @@
                             <li> <a href="index.html">Home</a> </li>
                             <li> <a href="about.html">About</a> </li>
                             <li class="active"> <a href="services.html">Services</a> </li>
-                            <li> <a href="portfolio.html">Gallery</a> </li>
+                            <li class="scroll"> <a href="#gallery" class="go-down gallery">Gallery</a> </li>
                             <li> <a href="faq.html">FAQ</a></li>
-                            <li> <a href="contact.html">Contact us</a> </li>
+                            <li class="scroll"> <a href="#contact-form" class="go-down">Contact us</a> </li>
+                            <li class="languages">
+                                <a href="#">
+                                    Languages
+                                    <span class="arrow"></span>
+                                </a>
+                                <ul class="dropdown">
+                                    <li> <a href="#">English</a> </li>
+                                    <li> <a href="#">German</a> </li>
+                                    <li> <a href="#">Serbian</a> </li>
+                                </ul>
+                            </li>
                         </ul>
-
-                        <!-- GET A QUOTES -->
-                        <div class="quotes"> <a href="#" class="customcolor"><i class="fa fa-pencil-square-o"></i> GET A QUOTES </a> </div>
                     </nav>
                 </div>
             </header>
@@ -90,7 +95,7 @@
                     <hr class="main">
                     <!-- Breadcrumb -->
                     <ol class="breadcrumb">
-                        <li><a href="#">Home</a></li>
+                        <li><a href="index.html">Home</a></li>
                         <li class="active">Our Services</li>
                     </ol>
                 </div>
@@ -115,9 +120,11 @@
                     <ul class="row">
 
                         <li class="col-md-4">
-                            <img class="img-responsive" src="images/welcome1.jpg" alt="">
+                            <img class="img-responsive" src="images/service1.jpg" alt="">
                             <div class="intro-ser news-content">
-                                <div class="tag"><img src="images/intro-icon-1.png" alt=""></div>
+                                <div class="tag">
+                                    <div class="first-icon"></div>
+                                </div>
                                 <h6 class="font-normal no-margin margin-bottom-20">static and dynamic analysis</h6>
                                 <p class="line-height-22">
                                     The team of our engineers has an experience in calculation of residential, industrial and the buidlings of special purposes.
@@ -129,9 +136,11 @@
                         </li>
 
                         <li class="col-md-4">
-                            <img class="img-responsive" src="images/welcome1.jpg" alt="">
+                            <img class="img-responsive" src="images/service2.jpg" alt="">
                             <div class="intro-ser news-content">
-                                <div class="tag"><img src="images/intro-icon-2.png" alt=""></div>
+                                <div class="tag">
+                                    <div class="second-icon"></div>
+                                </div>
                                 <h6 class="font-normal no-margin margin-bottom-20">
                                     DEVELOPMENT AND BUILDING OF
                                     FASSADE SYSTEMS, DOORS AND WINDOWS
@@ -144,9 +153,11 @@
                         </li>
 
                         <li class="col-md-4">
-                            <img class="img-responsive" src="images/welcome1.jpg" alt="">
+                            <img class="img-responsive" src="images/service3.jpg" alt="">
                             <div class="intro-ser news-content">
-                                <div class="tag"><img src="images/intro-icon-7.png" alt=""></div>
+                                <div class="tag">
+                                    <div class="third-icon"></div>
+                                </div>
                                 <h6 class="font-normal no-margin margin-bottom-20">FINISHING WORKS</h6>
                                 <p class="line-height-22">
                                     We are also offering the high-quality finishing work in cooperation with our partner companies.
@@ -158,7 +169,9 @@
                         <li class="col-md-4">
                             <img class="img-responsive" src="images/welcome1.jpg" alt="">
                             <div class="intro-ser news-content">
-                                <div class="tag"><img src="images/intro-icon-1.png" alt=""></div>
+                                <div class="tag">
+                                    <div class="fourth-icon"></div>
+                                </div>
                                 <h6 class="font-normal no-margin margin-bottom-20">
                                     ENGINEERING SIMULATIONS AND SPECIALIZED CALCULATIONS
                                 </h6>
@@ -172,9 +185,11 @@
                         </li>
 
                         <li class="col-md-4">
-                            <img class="img-responsive" src="images/welcome1.jpg" alt="">
+                            <img class="img-responsive" src="images/service4.jpg" alt="">
                             <div class="intro-ser news-content">
-                                <div class="tag"><img src="images/intro-icon-2.png" alt=""></div>
+                                <div class="tag">
+                                    <div class="fifth-icon"></div>
+                                </div>
                                 <h6 class="font-normal no-margin margin-bottom-20">
                                     ARCHITECTURAL MODELING
                                     AND VISUALIZATION
@@ -188,9 +203,11 @@
                         </li>
 
                         <li class="col-md-4">
-                            <img class="img-responsive" src="images/welcome1.jpg" alt="">
+                            <img class="img-responsive" src="images/service5.jpg" alt="">
                             <div class="intro-ser news-content">
-                                <div class="tag"><img src="images/intro-icon-7.png" alt=""></div>
+                                <div class="tag">
+                                    <div class="sixth-icon"></div>
+                                </div>
                                 <h6 class="font-normal no-margin margin-bottom-20">PROJECT MANAGEMENT</h6>
                                 <p class="line-height-22">
                                     Our team provides the service to develop 3D building information models based on existing, coordinated project
@@ -205,115 +222,119 @@
             </section>
 
             <!-- GALLERY -->
-            <section class="latest-work light-gray-bg padding-top-150 padding-bottom-150 gallery">
-                <div class="container">
+            <div id="gallery">
+                <section class="latest-work light-gray-bg padding-top-150 padding-bottom-150 gallery">
+                    <div class="container">
 
-                    <!-- Work -->
-                    <div class="heading white text-left">
-                        <h3>Gallery</h3>
-                        <hr>
+                        <!-- Work -->
+                        <div class="heading white text-left">
+                            <h3>Gallery</h3>
+                            <hr>
+                        </div>
+                        <div class="portfolio-wrapper">
+                            <div class="filter">
+                                <div class="text-right">
+                                    <ul>
+                                        <li><a class="active" data-toggle="tab" href="#." data-filter="*">All Projects </a>|</li>
+                                        <li><a href="#" data-filter=".interior">Interior Design </a>|</li>
+                                        <li><a href="#" data-filter=".building">Building </a>|</li>
+                                        <li><a href="#" data-filter=".construction">Construction </a>|</li>
+                                        <li><a href="#" data-filter=".renovate">Renovate</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <ul class="items col-4 row">
+                                <li class="item col-md-4 building construction renovate">
+                                    <div class="gal-item">
+                                        <img src="images/gallery1.jpg" alt="" class="img-responsive">
+                                        <!-- Hover Info -->
+                                        <!--<div class="hover-info">
+                                            <h6>Construction</h6>
+                                            <p> Maxius Ligula Semper</p>
+                                            <a href="#."><i class="ion-android-arrow-forward"></i></a>
+                                        </div>-->
+                                    </div>
+                                </li>
+                                <li class="item col-md-4  construction">
+                                    <div class="gal-item">
+                                        <img src="images/gallery2.jpg" alt="" class="img-responsive">
+                                    </div>
+                                </li>
+                                <li class="item col-md-4 interio renovate">
+                                    <div class="gal-item">
+                                        <img src="images/gallery3.jpg" alt="" class="img-responsive">
+                                    </div>
+                                </li>
+                                <li class="item col-md-4 interior building construction">
+                                    <div class="gal-item">
+                                        <img src="images/gallery4.jpg" alt="" class="img-responsive">
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="portfolio-wrapper">
-                        <div class="filter">
-                            <div class="text-right">
-                                <ul>
-                                    <li><a class="active" data-toggle="tab" href="#." data-filter="*">All Projects </a>|</li>
-                                    <li><a href="#" data-filter=".interior">Interior Design </a>|</li>
-                                    <li><a href="#" data-filter=".building">Building </a>|</li>
-                                    <li><a href="#" data-filter=".construction">Construction </a>|</li>
-                                    <li><a href="#" data-filter=".renovate">Renovate</a></li>
-                                </ul>
+                </section>
+            </div>
+        </div>
+
+        <!-- CONTACT FORM -->
+        <div id="contact-form">
+            <section class="contact-page padding-top-100 padding-bottom-100">
+                <div class="container contact-container">
+                    <div class="row margin-top-100 margin-bottom-100">
+                        <div class="col-md-12">
+                            <div class="heading text-left margin-bottom-20">
+                                <h3> Keep  in <span>Touch</span></h3>
+                                <hr>
+                            </div>
+                            <p class="content">FEEL FREE TO CONTACT US ABOUT ANY QUESTION THAT YOU MIGHT HAVE.</p>
+                            <p class="content">We kindly invite you to visit our “Services” section for more detailed informations about our offer.</p>
+                            <div class="contact-form">
+
+                                <!-- Form  -->
+                                <div class="margin-top-50">
+                                    <div class="contact-form">
+
+                                        <!-- Success Msg -->
+                                        <div id="contact_message" class="success-msg"> <i class="fa fa-paper-plane-o"></i>Thank You. Your Message has been Submitted</div>
+
+                                        <!-- FORM -->
+                                        <form role="form" id="contact_form" class="contact-form" method="post" onSubmit="return false">
+                                            <ul class="row">
+                                                <li class="col-sm-12">
+                                                    <label>
+                                                        <input type="text" class="form-control" name="name" id="name" placeholder="NAME">
+                                                    </label>
+                                                </li>
+                                                <li class="col-sm-12">
+                                                    <label>
+                                                        <input type="text" class="form-control" name="email" id="email" placeholder="EMAIL">
+                                                    </label>
+                                                </li>
+                                                <li class="col-sm-12">
+                                                    <label>
+                                                        <input type="text" class="form-control" name="company" id="company" placeholder="SUBJECT">
+                                                    </label>
+                                                </li>
+                                                <li class="col-sm-12 margin-top-20">
+                                                    <label>
+                                                        <textarea class="form-control" name="message" id="message" rows="5" placeholder=""></textarea>
+                                                    </label>
+                                                </li>
+                                                <li class="col-sm-12">
+                                                    <button type="submit" value="submit" id="btn_submit" class="btn btn-yellow send-btn" onClick="proceed();">SEND</button>
+                                                </li>
+                                            </ul>
+                                        </form>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-
-                        <ul class="items col-4 row">
-                            <li class="item col-md-4 building construction renovate">
-                                <div class="gal-item">
-                                    <img src="images/gallery1.jpg" alt="" class="img-responsive">
-                                    <!-- Hover Info -->
-                                    <!--<div class="hover-info">
-                                        <h6>Construction</h6>
-                                        <p> Maxius Ligula Semper</p>
-                                        <a href="#."><i class="ion-android-arrow-forward"></i></a>
-                                    </div>-->
-                                </div>
-                            </li>
-                            <li class="item col-md-4  construction">
-                                <div class="gal-item">
-                                    <img src="images/gallery2.jpg" alt="" class="img-responsive">
-                                </div>
-                            </li>
-                            <li class="item col-md-4 interio renovate">
-                                <div class="gal-item">
-                                    <img src="images/gallery3.jpg" alt="" class="img-responsive">
-                                </div>
-                            </li>
-                            <li class="item col-md-4 interior building construction">
-                                <div class="gal-item">
-                                    <img src="images/gallery4.jpg" alt="" class="img-responsive">
-                                </div>
-                            </li>
-                        </ul>
                     </div>
                 </div>
             </section>
         </div>
-
-        <!-- CONTACT FORM -->
-        <section class="contact-page padding-top-100 padding-bottom-100">
-            <div class="container contact-container">
-                <div class="row margin-top-100 margin-bottom-100">
-                    <div class="col-md-12">
-                        <div class="heading text-left margin-bottom-20">
-                            <h3> Keep  in <span>Touch</span></h3>
-                            <hr>
-                        </div>
-                        <p class="content">FEEL FREE TO CONTACT US ABOUT ANY QUESTION THAT YOU MIGHT HAVE.</p>
-                        <p class="content">We kindly invite you to visit our “Services” section for more detailed informations about our offer.</p>
-                        <div class="contact-form">
-
-                            <!-- Form  -->
-                            <div class="margin-top-50">
-                                <div class="contact-form">
-
-                                    <!-- Success Msg -->
-                                    <div id="contact_message" class="success-msg"> <i class="fa fa-paper-plane-o"></i>Thank You. Your Message has been Submitted</div>
-
-                                    <!-- FORM -->
-                                    <form role="form" id="contact_form" class="contact-form" method="post" onSubmit="return false">
-                                        <ul class="row">
-                                            <li class="col-sm-12">
-                                                <label>
-                                                    <input type="text" class="form-control" name="name" id="name" placeholder="NAME">
-                                                </label>
-                                            </li>
-                                            <li class="col-sm-12">
-                                                <label>
-                                                    <input type="text" class="form-control" name="email" id="email" placeholder="EMAIL">
-                                                </label>
-                                            </li>
-                                            <li class="col-sm-12">
-                                                <label>
-                                                    <input type="text" class="form-control" name="company" id="company" placeholder="SUBJECT">
-                                                </label>
-                                            </li>
-                                            <li class="col-sm-12 margin-top-20">
-                                                <label>
-                                                    <textarea class="form-control" name="message" id="message" rows="5" placeholder=""></textarea>
-                                                </label>
-                                            </li>
-                                            <li class="col-sm-12">
-                                                <button type="submit" value="submit" id="btn_submit" class="btn btn-yellow send-btn" onClick="proceed();">SEND</button>
-                                            </li>
-                                        </ul>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
 
         <!-- SUB FOOTER -->
         <section class="sub-footer">
@@ -323,12 +344,16 @@
                         <div class="footer-logo"></div>
                     </li>
                     <li class="col-sm-4">
-                        <div class="icon"> <i class="fa fa-envelope-o"></i> </div>
+                        <div class="icon">
+                            <div class="call-footer-icon"></div>
+                        </div>
                         <h6>24/7 support</h6>
                         <p>+123 4567 890</p>
                     </li>
                     <li class="col-sm-4">
-                        <div class="icon"> <i class="fa fa-clock-o"></i> </div>
+                        <div class="icon">
+                            <div class="email-footer-icon"></div>
+                        </div>
                         <h6>EMAIL</h6>
                         <p>engineering@gmail.com</p>
                     </li>

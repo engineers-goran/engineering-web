@@ -19,8 +19,11 @@
     <link href="css/ionicons.min.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-    <link href="css/responsive.css" rel="stylesheet">
     <link href="css/master.min.css" rel="stylesheet" />
+    <link href="css/responsive.css" rel="stylesheet">
+
+    <!--favicon-->
+    <link rel="icon" type="image/png" sizes="96x96" href="../images/favicon/favicon-96x96.png">
 
     <!-- Online Fonts -->
     <link href='https://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
@@ -41,26 +44,20 @@
         <!-- header -->
         <div class="container relative">
             <header>
-                <div class="logo"> <a href="#."><img class="img-responsive" src="images/engineering-logo.svg" alt=""></a> </div>
+                <div class="logo"> <a href="index.html"><img class="img-responsive" src="images/engineering-logo.svg" alt=""></a> </div>
                 <!-- Top bar -->
                 <div class="top-bar">
                     <div class="top-info">
                         <ul class="personal-info">
                             <li>
-                                <p><i class="fa fa-phone"></i> + 124 45 78 678 </p>
+                                <p><div class="call-icon"></div> + 124 45 78 678 </p>
                             </li>
                             <li>
-                                <p><i class="fa fa-envelope-o"></i> Support@mail.com </p>
+                                <p><div class="email-icon"></div> engineering@mail.com </p>
                             </li>
                             <li>
-                                <p><i class="fa fa-clock-o"></i> Mon - Fri : 08.00 - 17.00 </p>
+                                <p><div class="time-icon"></div> Mon - Fri : 08.00 - 17.00 </p>
                             </li>
-                        </ul>
-                        <ul class="social">
-                            <li><a href="#."><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#."><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="#."><i class="fa fa-google"></i></a></li>
-                            <li><a href="#."><i class="fa fa-linkedin"></i></a></li>
                         </ul>
                     </div>
 
@@ -70,13 +67,21 @@
                             <li> <a href="index.html">Home</a> </li>
                             <li> <a href="about.html">About</a> </li>
                             <li> <a href="services.html">Services</a> </li>
-                            <li> <a href="portfolio.html">Gallery</a> </li>
+                            <li class="scroll"> <a href="#gallery" class="go-down gallery">Gallery</a> </li>
                             <li class="active"> <a href="faq.html">FAQ</a></li>
-                            <li> <a href="contact.html">Contact us</a> </li>
+                            <li class="scroll"> <a href="#contact-form" class="go-down">Contact us</a> </li>
+                            <li class="languages">
+                                <a href="#">
+                                    Languages
+                                    <span class="arrow"></span>
+                                </a>
+                                <ul class="dropdown">
+                                    <li> <a href="#">English</a> </li>
+                                    <li> <a href="#">German</a> </li>
+                                    <li> <a href="#">Serbian</a> </li>
+                                </ul>
+                            </li>
                         </ul>
-
-                        <!-- GET A QUOTES -->
-                        <div class="quotes"> <a href="#" class="customcolor"><i class="fa fa-pencil-square-o"></i> GET A QUOTES </a> </div>
                     </nav>
                 </div>
             </header>
@@ -90,7 +95,7 @@
                     <hr class="main">
                     <!-- Breadcrumb -->
                     <ol class="breadcrumb">
-                        <li><a href="#">Home</a></li>
+                        <li><a href="index.html">Home</a></li>
                         <li class="active">FAQ</li>
                     </ol>
                 </div>
@@ -111,7 +116,7 @@
                             <!-- heading -->
                             <div class="heading text-left">
                                 <h3> Frequently asked  <span>Questions</span></h3>
-                                <div>Can't find what you're looking for here? EMAIL US YOUR QUESTION.</div>
+                                <div class="faq-subtitle">Can't find what you're looking for here? EMAIL US YOUR QUESTION.</div>
                                 <hr>
                             </div>
 
@@ -119,126 +124,91 @@
                             <div class="panel-group style-2" id="accordion">
                                 <div class="panel panel-default">
 
-                                    <!--======= PANEL HEADING =========-->
                                     <div class="panel-heading">
-                                        <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"> <span class="icon-accor"><i class="fa fa-warning"></i></span> The Love Boat soon will be making another run? </a> </h4>
+                                        <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"> <span class="icon-accor"><span>1</span></span>What is Lorem Ipsum?</a> </h4>
                                     </div>
-
-                                    <!--======= ADD INFO HERE =========-->
                                     <div id="collapseOne" class="panel-collapse collapse in">
                                         <div class="panel-body">
                                             <p>
-                                                Flying away on a wing and a prayer who could it be believe it or not its just me. Love exciting and new. Come aboard were expecting you. Love life's sweetest reward Let it flow it floats back to you. Now the world don't move to the beat of just one drum. What might be right for you may not be right for some. So this is the tale of our castaways.<br>
-
-                                                Crack commando unit was sent to prison by a military court for a crime they didn't commit. These men promptly escaped from a maximum security stockade to the Los Angeles underground. Believe it or not I'm walking on air. I never thought I could feel so free. Just two good ol' boys Never meanin' no harm. Beats all you've ever saw been in trouble with the law since the day they was born. black gold They were four men living all together yet they were all alone. Now the world don't move to the beat of just one drum. What might be right for you may not be right for some.
+                                                It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
                                             </p>
                                         </div>
                                     </div>
                                 </div>
 
-                                <!--======= ACCORDING 2 =========-->
                                 <div class="panel panel-default">
                                     <div class="panel-heading">
-                                        <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" class="collapsed"><span class="icon-accor"><i class="fa fa-bell"></i></span>Took a whole lotta trying just to get up that hill?</a> </h4>
+                                        <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" class="collapsed"><span class="icon-accor"><span>2</span></span>Where does it come from?</a> </h4>
                                     </div>
-
-                                    <!--======= ADD INFO HERE =========-->
                                     <div id="collapseTwo" class="panel-collapse collapse">
                                         <div class="panel-body">
                                             <p>
-                                                Flying away on a wing and a prayer who could it be believe it or not its just me. Love exciting and new. Come aboard were expecting you. Love life's sweetest reward Let it flow it floats back to you. Now the world don't move to the beat of just one drum. What might be right for you may not be right for some. So this is the tale of our castaways.<br>
-
-                                                Crack commando unit was sent to prison by a military court for a crime they didn't commit. These men promptly escaped from a maximum security stockade to the Los Angeles underground. Believe it or not I'm walking on air. I never thought I could feel so free. Just two good ol' boys Never meanin' no harm. Beats all you've ever saw been in trouble with the law since the day they was born. black gold They were four men living all together yet they were all alone. Now the world don't move to the beat of just one drum. What might be right for you may not be right for some.
+                                                It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
                                             </p>
                                         </div>
                                     </div>
                                 </div>
 
-                                <!--======= ACCORDING 3 =========-->
                                 <div class="panel panel-default">
                                     <div class="panel-heading">
-                                        <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" class="collapsed"><span class="icon-accor"><i class="fa fa-gear"></i></span> Its like a kind of torture to have to watch the show? </a> </h4>
+                                        <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" class="collapsed"><span class="icon-accor"><span>3</span></span>Why do we use it?</a> </h4>
                                     </div>
-
-                                    <!--======= ADD INFO HERE =========-->
                                     <div id="collapseThree" class="panel-collapse collapse">
                                         <div class="panel-body">
                                             <p>
-                                                Flying away on a wing and a prayer who could it be believe it or not its just me. Love exciting and new. Come aboard were expecting you. Love life's sweetest reward Let it flow it floats back to you. Now the world don't move to the beat of just one drum. What might be right for you may not be right for some. So this is the tale of our castaways.<br>
-
-                                                Crack commando unit was sent to prison by a military court for a crime they didn't commit. These men promptly escaped from a maximum security stockade to the Los Angeles underground. Believe it or not I'm walking on air. I never thought I could feel so free. Just two good ol' boys Never meanin' no harm. Beats all you've ever saw been in trouble with the law since the day they was born. black gold They were four men living all together yet they were all alone. Now the world don't move to the beat of just one drum. What might be right for you may not be right for some.
+                                                It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
                                             </p>
                                         </div>
                                     </div>
                                 </div>
 
-                                <!--======= ACCORDING 3 =========-->
                                 <div class="panel panel-default">
                                     <div class="panel-heading">
-                                        <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" href="#collapsefor" class="collapsed"><span class="icon-accor"><i class="fa fa-black-tie"></i></span> Now the world don't move to the beat of just one drum?</a> </h4>
+                                        <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" href="#collapsefor" class="collapsed"><span class="icon-accor"><span>4</span></span>Where can I get some?</a> </h4>
                                     </div>
-
-                                    <!--======= ADD INFO HERE =========-->
                                     <div id="collapsefor" class="panel-collapse collapse">
                                         <div class="panel-body">
                                             <p>
-                                                Flying away on a wing and a prayer who could it be believe it or not its just me. Love exciting and new. Come aboard were expecting you. Love life's sweetest reward Let it flow it floats back to you. Now the world don't move to the beat of just one drum. What might be right for you may not be right for some. So this is the tale of our castaways.<br>
-
-                                                Crack commando unit was sent to prison by a military court for a crime they didn't commit. These men promptly escaped from a maximum security stockade to the Los Angeles underground. Believe it or not I'm walking on air. I never thought I could feel so free. Just two good ol' boys Never meanin' no harm. Beats all you've ever saw been in trouble with the law since the day they was born. black gold They were four men living all together yet they were all alone. Now the world don't move to the beat of just one drum. What might be right for you may not be right for some.
+                                                It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
                                             </p>
                                         </div>
                                     </div>
                                 </div>
 
-                                <!--======= ACCORDING 3 =========-->
                                 <div class="panel panel-default">
                                     <div class="panel-heading">
-                                        <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" href="#collapsefive" class="collapsed"><span class="icon-accor"><i class="fa fa-anchor"></i></span>What might be right for you may not be right for some? </a> </h4>
+                                        <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" href="#collapsefive" class="collapsed"><span class="icon-accor"><span>5</span></span>What is Lorem Ipsum?</a> </h4>
                                     </div>
-
-                                    <!--======= ADD INFO HERE =========-->
                                     <div id="collapsefive" class="panel-collapse collapse">
                                         <div class="panel-body">
                                             <p>
-                                                Flying away on a wing and a prayer who could it be believe it or not its just me. Love exciting and new. Come aboard were expecting you. Love life's sweetest reward Let it flow it floats back to you. Now the world don't move to the beat of just one drum. What might be right for you may not be right for some. So this is the tale of our castaways.<br>
-
-                                                Crack commando unit was sent to prison by a military court for a crime they didn't commit. These men promptly escaped from a maximum security stockade to the Los Angeles underground. Believe it or not I'm walking on air. I never thought I could feel so free. Just two good ol' boys Never meanin' no harm. Beats all you've ever saw been in trouble with the law since the day they was born. black gold They were four men living all together yet they were all alone. Now the world don't move to the beat of just one drum. What might be right for you may not be right for some.
+                                                It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
                                             </p>
                                         </div>
                                     </div>
                                 </div>
 
-                                <!--======= ACCORDING 3 =========-->
                                 <div class="panel panel-default">
                                     <div class="panel-heading">
-                                        <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" href="#collapsesix" class="collapsed"><span class="icon-accor"><i class="fa fa-gear"></i></span>Sometimes you want to go where everybody knows your name?</a> </h4>
+                                        <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" href="#collapsesix" class="collapsed"><span class="icon-accor"><span>6</span></span>Where can I get some?</a> </h4>
                                     </div>
-
-                                    <!--======= ADD INFO HERE =========-->
                                     <div id="collapsesix" class="panel-collapse collapse">
                                         <div class="panel-body">
                                             <p>
-                                                Flying away on a wing and a prayer who could it be believe it or not its just me. Love exciting and new. Come aboard were expecting you. Love life's sweetest reward Let it flow it floats back to you. Now the world don't move to the beat of just one drum. What might be right for you may not be right for some. So this is the tale of our castaways.<br>
-
-                                                Crack commando unit was sent to prison by a military court for a crime they didn't commit. These men promptly escaped from a maximum security stockade to the Los Angeles underground. Believe it or not I'm walking on air. I never thought I could feel so free. Just two good ol' boys Never meanin' no harm. Beats all you've ever saw been in trouble with the law since the day they was born. black gold They were four men living all together yet they were all alone. Now the world don't move to the beat of just one drum. What might be right for you may not be right for some.
+                                                It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
                                             </p>
                                         </div>
                                     </div>
                                 </div>
 
-                                <!--======= ACCORDING 3 =========-->
                                 <div class="panel panel-default">
                                     <div class="panel-heading">
-                                        <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" href="#collapsesev" class="collapsed"><span class="icon-accor"><i class="fa fa-gear"></i></span> I have always wanted to have a neighbor just like you? </a> </h4>
+                                        <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" href="#collapsesev" class="collapsed"><span class="icon-accor"><span>7</span></span>Where can I get some?</a> </h4>
                                     </div>
-
-                                    <!--======= ADD INFO HERE =========-->
                                     <div id="collapsesev" class="panel-collapse collapse">
                                         <div class="panel-body">
                                             <p>
-                                                Flying away on a wing and a prayer who could it be believe it or not its just me. Love exciting and new. Come aboard were expecting you. Love life's sweetest reward Let it flow it floats back to you. Now the world don't move to the beat of just one drum. What might be right for you may not be right for some. So this is the tale of our castaways.<br>
-
-                                                Crack commando unit was sent to prison by a military court for a crime they didn't commit. These men promptly escaped from a maximum security stockade to the Los Angeles underground. Believe it or not I'm walking on air. I never thought I could feel so free. Just two good ol' boys Never meanin' no harm. Beats all you've ever saw been in trouble with the law since the day they was born. black gold They were four men living all together yet they were all alone. Now the world don't move to the beat of just one drum. What might be right for you may not be right for some.
+                                                It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
                                             </p>
                                         </div>
                                     </div>
@@ -251,21 +221,20 @@
                             <div class="side-bar">
 
                                 <!--======= Search =========-->
-                                <div class="search">
+                                <!--<div class="search">
                                     <input class="form-control" type="search" placeholder="Search">
                                     <button type="submit"><i class="fa fa-search"></i></button>
-                                </div>
-
-                                <!--======= Categories =========-->
-                                <h5 class="side-tittle margin-top-50">Post Category </h5>
+                                </div>-->
+                                <!--======= Our services =========-->
+                                <h5 class="side-tittle margin-top-50">Our services</h5>
                                 <hr class="main">
-                                <ul class="cate">
-                                    <li><a href="#.">Building plans </a></li>
-                                    <li><a href="#.">Architecture </a></li>
-                                    <li><a href="#.">Workspace Interior </a></li>
-                                    <li><a href="#.">Building Renovation </a></li>
-                                    <li><a href="#.">Exterior Design </a></li>
-                                    <li><a href="#.">Building Consultancy </a></li>
+                                <ul class="cate faq-services">
+                                    <li><a href="#.">Static and dynamic analysis</a></li>
+                                    <li><a href="#.">Development and building of fassade systems, doors and windows</a></li>
+                                    <li><a href="#.">Finishing works</a></li>
+                                    <li><a href="#.">Engineering simulations and specialized calculations</a></li>
+                                    <li><a href="#.">Architectural modeling and visualization</a></li>
+                                    <li><a href="#.">Project management</a></li>
 
                                 </ul>
                             </div>
@@ -277,115 +246,119 @@
             </section>
 
             <!-- GALLERY -->
-            <section class="latest-work light-gray-bg padding-top-150 padding-bottom-150 gallery">
-                <div class="container">
+            <div id="gallery">
+                <section class="latest-work light-gray-bg padding-top-150 padding-bottom-150 gallery">
+                    <div class="container">
 
-                    <!-- Work -->
-                    <div class="heading white text-left">
-                        <h3>Gallery</h3>
-                        <hr>
+                        <!-- Work -->
+                        <div class="heading white text-left">
+                            <h3>Gallery</h3>
+                            <hr>
+                        </div>
+                        <div class="portfolio-wrapper">
+                            <div class="filter">
+                                <div class="text-right">
+                                    <ul>
+                                        <li><a class="active" data-toggle="tab" href="#." data-filter="*">All Projects </a>|</li>
+                                        <li><a href="#" data-filter=".interior">Interior Design </a>|</li>
+                                        <li><a href="#" data-filter=".building">Building </a>|</li>
+                                        <li><a href="#" data-filter=".construction">Construction </a>|</li>
+                                        <li><a href="#" data-filter=".renovate">Renovate</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <ul class="items col-4 row">
+                                <li class="item col-md-4 building construction renovate">
+                                    <div class="gal-item">
+                                        <img src="images/gallery1.jpg" alt="" class="img-responsive">
+                                        <!-- Hover Info -->
+                                        <!--<div class="hover-info">
+                                            <h6>Construction</h6>
+                                            <p> Maxius Ligula Semper</p>
+                                            <a href="#."><i class="ion-android-arrow-forward"></i></a>
+                                        </div>-->
+                                    </div>
+                                </li>
+                                <li class="item col-md-4  construction">
+                                    <div class="gal-item">
+                                        <img src="images/gallery2.jpg" alt="" class="img-responsive">
+                                    </div>
+                                </li>
+                                <li class="item col-md-4 interio renovate">
+                                    <div class="gal-item">
+                                        <img src="images/gallery3.jpg" alt="" class="img-responsive">
+                                    </div>
+                                </li>
+                                <li class="item col-md-4 interior building construction">
+                                    <div class="gal-item">
+                                        <img src="images/gallery4.jpg" alt="" class="img-responsive">
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="portfolio-wrapper">
-                        <div class="filter">
-                            <div class="text-right">
-                                <ul>
-                                    <li><a class="active" data-toggle="tab" href="#." data-filter="*">All Projects </a>|</li>
-                                    <li><a href="#" data-filter=".interior">Interior Design </a>|</li>
-                                    <li><a href="#" data-filter=".building">Building </a>|</li>
-                                    <li><a href="#" data-filter=".construction">Construction </a>|</li>
-                                    <li><a href="#" data-filter=".renovate">Renovate</a></li>
-                                </ul>
+                </section>
+            </div>
+        </div>
+
+        <!-- CONTACT FORM -->
+        <div id="contact-form">
+            <section class="contact-page padding-top-100 padding-bottom-100">
+                <div class="container contact-container">
+                    <div class="row margin-top-100 margin-bottom-100">
+                        <div class="col-md-12">
+                            <div class="heading text-left margin-bottom-20">
+                                <h3> Keep  in <span>Touch</span></h3>
+                                <hr>
+                            </div>
+                            <p class="content">FEEL FREE TO CONTACT US ABOUT ANY QUESTION THAT YOU MIGHT HAVE.</p>
+                            <p class="content">We kindly invite you to visit our “Services” section for more detailed informations about our offer.</p>
+                            <div class="contact-form">
+
+                                <!-- Form  -->
+                                <div class="margin-top-50">
+                                    <div class="contact-form">
+
+                                        <!-- Success Msg -->
+                                        <div id="contact_message" class="success-msg"> <i class="fa fa-paper-plane-o"></i>Thank You. Your Message has been Submitted</div>
+
+                                        <!-- FORM -->
+                                        <form role="form" id="contact_form" class="contact-form" method="post" onSubmit="return false">
+                                            <ul class="row">
+                                                <li class="col-sm-12">
+                                                    <label>
+                                                        <input type="text" class="form-control" name="name" id="name" placeholder="NAME">
+                                                    </label>
+                                                </li>
+                                                <li class="col-sm-12">
+                                                    <label>
+                                                        <input type="text" class="form-control" name="email" id="email" placeholder="EMAIL">
+                                                    </label>
+                                                </li>
+                                                <li class="col-sm-12">
+                                                    <label>
+                                                        <input type="text" class="form-control" name="company" id="company" placeholder="SUBJECT">
+                                                    </label>
+                                                </li>
+                                                <li class="col-sm-12 margin-top-20">
+                                                    <label>
+                                                        <textarea class="form-control" name="message" id="message" rows="5" placeholder=""></textarea>
+                                                    </label>
+                                                </li>
+                                                <li class="col-sm-12">
+                                                    <button type="submit" value="submit" id="btn_submit" class="btn btn-yellow send-btn" onClick="proceed();">SEND</button>
+                                                </li>
+                                            </ul>
+                                        </form>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-
-                        <ul class="items col-4 row">
-                            <li class="item col-md-4 building construction renovate">
-                                <div class="gal-item">
-                                    <img src="images/gallery1.jpg" alt="" class="img-responsive">
-                                    <!-- Hover Info -->
-                                    <!--<div class="hover-info">
-                                        <h6>Construction</h6>
-                                        <p> Maxius Ligula Semper</p>
-                                        <a href="#."><i class="ion-android-arrow-forward"></i></a>
-                                    </div>-->
-                                </div>
-                            </li>
-                            <li class="item col-md-4  construction">
-                                <div class="gal-item">
-                                    <img src="images/gallery2.jpg" alt="" class="img-responsive">
-                                </div>
-                            </li>
-                            <li class="item col-md-4 interio renovate">
-                                <div class="gal-item">
-                                    <img src="images/gallery3.jpg" alt="" class="img-responsive">
-                                </div>
-                            </li>
-                            <li class="item col-md-4 interior building construction">
-                                <div class="gal-item">
-                                    <img src="images/gallery4.jpg" alt="" class="img-responsive">
-                                </div>
-                            </li>
-                        </ul>
                     </div>
                 </div>
             </section>
         </div>
-
-        <!-- CONTACT FORM -->
-        <section class="contact-page padding-top-100 padding-bottom-100">
-            <div class="container contact-container">
-                <div class="row margin-top-100 margin-bottom-100">
-                    <div class="col-md-12">
-                        <div class="heading text-left margin-bottom-20">
-                            <h3> Keep  in <span>Touch</span></h3>
-                            <hr>
-                        </div>
-                        <p class="content">FEEL FREE TO CONTACT US ABOUT ANY QUESTION THAT YOU MIGHT HAVE.</p>
-                        <p class="content">We kindly invite you to visit our “Services” section for more detailed informations about our offer.</p>
-                        <div class="contact-form">
-
-                            <!-- Form  -->
-                            <div class="margin-top-50">
-                                <div class="contact-form">
-
-                                    <!-- Success Msg -->
-                                    <div id="contact_message" class="success-msg"> <i class="fa fa-paper-plane-o"></i>Thank You. Your Message has been Submitted</div>
-
-                                    <!-- FORM -->
-                                    <form role="form" id="contact_form" class="contact-form" method="post" onSubmit="return false">
-                                        <ul class="row">
-                                            <li class="col-sm-12">
-                                                <label>
-                                                    <input type="text" class="form-control" name="name" id="name" placeholder="NAME">
-                                                </label>
-                                            </li>
-                                            <li class="col-sm-12">
-                                                <label>
-                                                    <input type="text" class="form-control" name="email" id="email" placeholder="EMAIL">
-                                                </label>
-                                            </li>
-                                            <li class="col-sm-12">
-                                                <label>
-                                                    <input type="text" class="form-control" name="company" id="company" placeholder="SUBJECT">
-                                                </label>
-                                            </li>
-                                            <li class="col-sm-12 margin-top-20">
-                                                <label>
-                                                    <textarea class="form-control" name="message" id="message" rows="5" placeholder=""></textarea>
-                                                </label>
-                                            </li>
-                                            <li class="col-sm-12">
-                                                <button type="submit" value="submit" id="btn_submit" class="btn btn-yellow send-btn" onClick="proceed();">SEND</button>
-                                            </li>
-                                        </ul>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
 
         <!-- SUB FOOTER -->
         <section class="sub-footer">
@@ -395,12 +368,16 @@
                         <div class="footer-logo"></div>
                     </li>
                     <li class="col-sm-4">
-                        <div class="icon"> <i class="fa fa-envelope-o"></i> </div>
+                        <div class="icon">
+                            <div class="call-footer-icon"></div>
+                        </div>
                         <h6>24/7 support</h6>
                         <p>+123 4567 890</p>
                     </li>
                     <li class="col-sm-4">
-                        <div class="icon"> <i class="fa fa-clock-o"></i> </div>
+                        <div class="icon">
+                            <div class="email-footer-icon"></div>
+                        </div>
                         <h6>EMAIL</h6>
                         <p>engineering@gmail.com</p>
                     </li>
