@@ -61,6 +61,8 @@
 
 /*#region Header*/
 header {
+    padding-left: 0;
+
     .logo {
         padding: 30px 0;
 
@@ -85,9 +87,14 @@ header {
             }
 
             &.languages {
-                position: relative;
-                right: 0;
-                top: 15px;
+                position: absolute;
+                right: 20px;
+                top: 50%;
+                -moz-transform: translateY(-50%);
+                -ms-transform: translateY(-50%);
+                -o-transform: translateY(-50%);
+                -webkit-transform: translateY(-50%);
+                transform: translateY(-50%);
                 width: 165px;
                 height: 42px;
                 margin: 2px 20px 2px 0;
