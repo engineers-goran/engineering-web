@@ -35,6 +35,9 @@
 }
 /*#endregion*/
 /*#region Header*/
+header .logo {
+  padding: 30px 0;
+}
 header .logo img {
   display: table !important;
   width: 105px;
@@ -64,7 +67,8 @@ header .navbar li.languages {
   background-color: #ffbe00;
 }
 header .navbar li.languages a {
-  padding: 12px;
+  padding: 0 12px;
+  line-height: 42px;
   text-align: center;
   color: #fff;
 }
@@ -84,8 +88,12 @@ header .navbar li.languages .dropdown {
   width: 165px;
   background-color: #ffbe00;
 }
+header .navbar li.languages .dropdown li a {
+  border: 2px solid #ffbe00;
+}
 header .navbar li.languages .dropdown li a:hover {
   color: #344248 !important;
+  border: 2px solid #fff;
 }
 header .top-info .personal-info {
   width: 100%;

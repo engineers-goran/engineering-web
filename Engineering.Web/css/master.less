@@ -62,6 +62,8 @@
 /*#region Header*/
 header {
     .logo {
+        padding: 30px 0;
+
         img {
             display: table !important;
             width: 105px;
@@ -97,7 +99,8 @@ header {
                 background-color: @yellow;
 
                 a {
-                    padding: 12px;
+                    padding: 0 12px;
+                    line-height: 42px;
                     text-align: center;
                     color: @w;
 
@@ -122,8 +125,11 @@ header {
 
                     li {
                         a {
+                            border: 2px solid @yellow;
+
                             &:hover {
                                 color: #344248 !important;
+                                border: 2px solid @w;
                             }
                         }
                     }
