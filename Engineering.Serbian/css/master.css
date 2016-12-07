@@ -53,14 +53,9 @@ header .navbar li a.gallery {
   color: #000 !important;
 }
 header .navbar li.languages {
-  position: absolute;
+  position: relative;
   right: 0;
-  top: 50%;
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
+  top: 15px;
   width: 165px;
   height: 42px;
   margin: 2px 20px 2px 0;
