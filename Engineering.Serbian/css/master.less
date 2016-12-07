@@ -18,6 +18,10 @@
         color: @b;
         letter-spacing: 0;
     }
+
+    &.text-left hr {
+        display: inline-block;
+    }
 }
 
 .sub-bnr {
@@ -56,6 +60,10 @@
             }
         }
     }
+}
+
+hr.main {
+    display: inline-block;
 }
 /*#endregion*/
 
@@ -651,17 +659,16 @@ header {
         li {
             padding: 15px;
             line-height: 22px;
-            cursor: grabbing;
 
             a:hover {
-                color: #777777;
-                cursor: grabbing;
+                color: @b;
             }
 
             a {
                 font-size: 14px;
                 color: #000;
                 font-family: 'Gotham-Book';
+                cursor: text;
             }
         }
     }

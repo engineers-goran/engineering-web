@@ -12,6 +12,9 @@
   color: #000;
   letter-spacing: 0;
 }
+.heading.text-left hr {
+  display: inline-block;
+}
 .sub-bnr h4 {
   font-family: 'Gotham-Bold';
 }
@@ -32,6 +35,9 @@
 .latest-work .filter li a {
   font-size: 16px;
   font-family: 'Gotham-Bold';
+}
+hr.main {
+  display: inline-block;
 }
 /*#endregion*/
 /*#region Header*/
@@ -508,16 +514,15 @@ header .top-info .personal-info li:last-child {
 .faqs .faq-services li {
   padding: 15px;
   line-height: 22px;
-  cursor: grabbing;
 }
 .faqs .faq-services li a:hover {
-  color: #777777;
-  cursor: grabbing;
+  color: #000;
 }
 .faqs .faq-services li a {
   font-size: 14px;
   color: #000;
   font-family: 'Gotham-Book';
+  cursor: text;
 }
 .faqs #accordion .panel-default .panel-heading:hover a {
   color: #ffbe00;
