@@ -12,16 +12,16 @@ ini_set('smtp_port', 2525);
 ini_set('smtp_user', '5965b1ec79ecf38ba6d0c10c613256c3');
 ini_set('smtp_pass', 'f0990ca6065c4a5f8f5bf2690827f9d1');
 
-	// Assigning data from $_POST array to variables
+    // Assigning data from $_POST array to variables
 if (isset($_POST['name'])) { $name = $_POST['name']; }
 if (isset($_POST['email'])) { $from = $_POST['email']; }
 if (isset($_POST['company'])) { $company = $_POST['company']; }
 if (isset($_POST['message'])) { $message = $_POST['message']; }
 
-	// Construct subject of the email
+    // Construct subject of the email
 $subject = 'Contact Iquery ' . $name;
 
-	// Construct email body
+    // Construct email body
 $body_message .= 'NAME: ' . $name . "\r\n\n";
 $body_message .= 'EMAIL: ' . $from . "\r\n\n";
 $body_message .= 'SUBJECT: ' . $company . "\r\n\n";
@@ -48,10 +48,10 @@ $mail->Subject = $subject;
 $mail->Body    = $body_message;
 
 if(!$mail->send()) {
-	echo 'Message could not be sent.';
-	echo 'Mailer Error: ' . $mail->ErrorInfo;
+    echo 'Message could not be sent.';
+    echo 'Mailer Error: ' . $mail->ErrorInfo;
 } else {
-	echo 'Message has been sent';
+    echo 'Message has been sent';
 }
 
 
