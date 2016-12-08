@@ -244,12 +244,18 @@ header .top-info .personal-info li:last-child {
 .contact-page .contact-container .send-btn:hover {
   color: #fff;
 }
+.contact-form .error {
+  color: #afb8bd;
+  font-size: 16px;
+}
 .contact-form textarea {
   resize: none;
+  font-size: 16px;
 }
 .contact-form label input {
   font-family: 'Gotham-Book';
   color: #afb8bd;
+  font-size: 16px;
 }
 /*#endregion*/
 /*#region Home page*/
