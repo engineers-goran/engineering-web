@@ -90,7 +90,8 @@
 
 @media(max-width:600px) {
     .our-services .news-content {
-        height: 350px;
+        height: 100%;
+        padding-bottom: 10px;
     }
 
     header .navbar li.languages {
