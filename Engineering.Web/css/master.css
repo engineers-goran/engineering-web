@@ -32,6 +32,9 @@
   color: #000;
   font-family: 'Gotham-Book';
 }
+.latest-work .filter li {
+  margin-right: 0;
+}
 .latest-work .filter li a {
   font-size: 16px;
   font-family: 'Gotham-Bold';
@@ -87,7 +90,7 @@ header .navbar li.languages a .arrow {
   top: 16px;
   height: 12px;
   width: 12px;
-  background: url(../images/sprite.svg) -163px -19px no-repeat;
+  background: url(../images/sprite.svg) -370px -21px no-repeat;
 }
 header .navbar li.languages a .indicator {
   display: none;
@@ -140,9 +143,9 @@ header .top-info .personal-info li:last-child {
   vertical-align: middle;
 }
 .top-info .personal-info li .call-icon {
-  height: 15px;
+  height: 20px;
   width: 15px;
-  background: url(../images/sprite.svg) -29px -16px no-repeat;
+  background: url(../images/sprite.svg) -327px -16px no-repeat;
 }
 .top-info .personal-info li .email-icon {
   height: 15px;
@@ -150,7 +153,7 @@ header .top-info .personal-info li:last-child {
   background: url(../images/sprite.svg) -74px -16px no-repeat;
 }
 .top-info .personal-info li .time-icon {
-  height: 15px;
+  height: 16px;
   width: 15px;
   background: url(../images/sprite.svg) -120px -16px no-repeat;
 }
@@ -195,7 +198,7 @@ header .top-info .personal-info li:last-child {
 .sub-footer ul li .icon .call-footer-icon {
   height: 31px;
   width: 35px;
-  background: url(../images/sprite.svg) -24px -119px no-repeat;
+  background: url(../images/sprite.svg) -137px -119px no-repeat;
 }
 .sub-footer ul li h6,
 .sub-footer ul li p {
@@ -335,7 +338,7 @@ header .top-info .personal-info li:last-child {
 .welcome .our-expertise .expertice5-img {
   height: 26px;
   width: 25px;
-  background: url(../images/sprite.svg) -357px -64px no-repeat;
+  background: url(../images/sprite.svg) -359px -64px no-repeat;
 }
 .welcome .our-expertise li {
   margin: 15px 0;
@@ -491,7 +494,7 @@ header .top-info .personal-info li:last-child {
 .our-services .news-content .sixth-icon {
   height: 26px;
   width: 25px;
-  background: url(../images/sprite.svg) -357px -64px no-repeat;
+  background: url(../images/sprite.svg) -359px -64px no-repeat;
 }
 /*#endregion*/
 /*#region FAQ*/
@@ -537,6 +540,11 @@ header .top-info .personal-info li:last-child {
   background-color: #ffbe00 !important;
 }
 .faqs #accordion .panel-default .panel-heading a {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  padding-right: 20px;
+  line-height: 20px;
   border-color: #ececec;
   font-size: 15px;
   font-family: 'Gotham-Book';
@@ -551,6 +559,7 @@ header .top-info .personal-info li:last-child {
   font-family: 'Gotham-Book';
 }
 .faqs #accordion .icon-accor {
+  display: table;
   background-color: transparent !important;
   color: #344248;
   border-right: 1px solid #ffbe00;

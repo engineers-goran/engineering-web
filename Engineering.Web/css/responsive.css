@@ -104,6 +104,11 @@
     .ownmenu ul.dropdown > li > a {
         padding-left: 10px !important;
     }
+
+    .faqs #accordion .panel-default .panel-heading a {
+        line-height: 14px;
+        font-size: 12px;
+    }
 }
 
 @media(min-width:1200px) and (max-width:1400px) {
