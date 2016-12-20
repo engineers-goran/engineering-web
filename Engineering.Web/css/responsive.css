@@ -37,6 +37,12 @@
 }
 
 @media(max-width:990px) {
+    .welcome .welcome-content {
+        height: auto;
+        padding-bottom: 15px;
+        margin-bottom: 30px;
+    }
+
     .contact-page .contact-container .heading hr {
         margin: 30px 0;
     }
@@ -86,12 +92,28 @@
     .sub-footer li {
         padding-left: 50px;
     }
+
+    .sub-footer ul li h6, .sub-footer ul li p {
+        font-size: 11px;
+    }
 }
 
 @media(max-width:600px) {
+    .welcome {
+        padding-top: 50px !important;
+    }
+
+    .introduction {
+        padding-top: 50px !important;
+    }
+
+    .faqs {
+        padding-top: 50px !important;
+    }
+
     .our-services .news-content {
-        height: 100%;
-        padding-bottom: 10px;
+        height: auto;
+        padding-bottom: 15px;
     }
 
     header .navbar li.languages {
@@ -106,10 +128,30 @@
     }
 
     .faqs #accordion .panel-default .panel-heading a {
+        padding-right: 30px;
         line-height: 14px;
-        font-size: 12px;
+        font-size: 11px;
+    }
+
+    .home-slider .slider-content {
+        font-size: 16px !important;
+        line-height: 16px !important;
     }
 }
+
+@media(max-width:375px) {
+    .faqs #accordion .panel-default .panel-heading a {
+        line-height: 12px;
+        font-size: 10px;
+    }
+}
+
+@media(max-width:350px) {
+    .home-slider .slider-title {
+        margin-bottom: 60px !important;
+    }
+}
+
 
 @media(min-width:1200px) and (max-width:1400px) {
     .latest-work .col-4 .item.filter-home {
