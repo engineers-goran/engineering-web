@@ -4,10 +4,10 @@ require 'class.phpmailer.php';
 require 'class.smtp.php';
 // specify your email here
 
-$to = 'nikola.j@enginee.rs';
+$to = 'office@bauengineering.rs';
 
 ini_set('SMTP','in.mailjet.com"' ); 
-ini_set('sendmail_from', 'info@enginee.rs');
+ini_set('sendmail_from', 'office@bauengineering.rs');
 ini_set('smtp_port', 2525);
 ini_set('smtp_user', '5965b1ec79ecf38ba6d0c10c613256c3');
 ini_set('smtp_pass', 'f0990ca6065c4a5f8f5bf2690827f9d1');
