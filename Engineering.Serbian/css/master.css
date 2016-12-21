@@ -200,7 +200,8 @@ header .top-info .personal-info li:last-child .time-icon {
   background-color: #141719 !important;
 }
 .sub-footer .logo-container {
-  padding: 45px 0;
+  padding: 20px 0;
+  /*padding: 45px 0;*/
 }
 .sub-footer .logo-container .footer-logo {
   width: 100px;
@@ -249,7 +250,7 @@ header .top-info .personal-info li:last-child .time-icon {
   margin-bottom: 0;
 }
 .sub-footer ul li p {
-  margin-bottom: 15px;
+  /*margin-bottom: 15px;*/
 }
 .rights {
   background-color: #111315 !important;
