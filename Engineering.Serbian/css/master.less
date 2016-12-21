@@ -54,6 +54,8 @@
 .latest-work {
     .filter {
         li {
+            margin-right: 0;
+
             a {
                 font-size: 16px;
                 font-family: 'Gotham-Bold';
@@ -72,7 +74,7 @@ header {
     padding-left: 0;
 
     .logo {
-        padding: 30px 0;
+        padding: 40px 0;
 
         img {
             display: table !important;
@@ -120,7 +122,7 @@ header {
                         top: 16px;
                         height: 12px;
                         width: 12px;
-                        background: url(../images/sprite.svg) -163px -19px no-repeat;
+                        background: url(../images/sprite.svg) -370px -21px no-repeat;
                     }
 
                     .indicator {
@@ -150,6 +152,8 @@ header {
 
     .top-info {
         .personal-info {
+            display: flex;
+            align-items: center;
             width: 100%;
 
             li {
@@ -157,7 +161,12 @@ header {
                 font-family: 'Gotham-ExtraLight';
 
                 &:last-child {
+                    padding: 5px 20px 5px 50px;
                     border-right: none;
+
+                    .time-icon {
+                        margin-left: -30px;
+                    }
                 }
             }
         }
@@ -190,8 +199,14 @@ header {
 
 .top-info {
     .personal-info {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
         li {
-            .call-icon,
+            .phone-icon,
+            .fax-icon,
+            .skype-icon,
             .email-icon,
             .time-icon {
                 display: inline-block;
@@ -199,10 +214,22 @@ header {
                 vertical-align: middle;
             }
 
-            .call-icon {
-                height: 15px;
+            .phone-icon {
+                height: 20px;
                 width: 15px;
-                background: url(../images/sprite.svg) -29px -16px no-repeat;
+                background: url(../images/sprite.svg) -30px -16px no-repeat;
+            }
+
+            .fax-icon {
+                height: 20px;
+                width: 15px;
+                background: url(../images/sprite.svg) -409px -16px no-repeat;
+            }
+
+            .skype-icon {
+                height: 20px;
+                width: 15px;
+                background: url(../images/sprite.svg) -327px -16px no-repeat;
             }
 
             .email-icon {
@@ -212,7 +239,7 @@ header {
             }
 
             .time-icon {
-                height: 15px;
+                height: 16px;
                 width: 15px;
                 background: url(../images/sprite.svg) -120px -16px no-repeat;
             }
@@ -222,13 +249,19 @@ header {
 
 .home-slider {
     .slider-title {
+        margin-bottom: 30px !important;
         font-family: 'BrandonGrotesque-Bold';
     }
 
     .slider-content {
+        left: 20px !important;
+        right: 20px !important;
+        white-space: inherit !important;
         font-size: 23px !important;
         font-family: 'Gotham-Light';
         font-weight: 100 !important;
+        margin: 0 auto !important;
+        line-height: 25px !important;
     }
 }
 /*#endregion*/
@@ -238,8 +271,8 @@ header {
     background-color: #141719 !important;
 
     .logo-container {
-        padding: 22px 0px;
-
+        padding: 20px 0;
+        /*padding: 45px 0;*/
         .footer-logo {
             width: 100px;
             height: 70px;
@@ -260,16 +293,28 @@ header {
             .icon {
                 background-color: #202527;
 
+                .phone-footer-icon {
+                    height: 31px;
+                    width: 35px;
+                    background: url(../images/sprite.svg) -24px -119px no-repeat;
+                }
+
+                .fax-footer-icon {
+                    height: 31px;
+                    width: 35px;
+                    background: url(../images/sprite.svg) -191px -119px no-repeat;
+                }
+
                 .email-footer-icon {
                     height: 31px;
                     width: 35px;
                     background: url(../images/sprite.svg) -81px -120px no-repeat;
                 }
 
-                .call-footer-icon {
+                .skype-footer-icon {
                     height: 31px;
                     width: 35px;
-                    background: url(../images/sprite.svg) -24px -119px no-repeat;
+                    background: url(../images/sprite.svg) -136px -119px no-repeat;
                 }
             }
 
@@ -277,6 +322,15 @@ header {
             p {
                 font-size: 12px;
                 font-family: 'Gotham-Bold';
+            }
+
+            h6 {
+                margin-top: 4px;
+                margin-bottom: 0;
+            }
+
+            p {
+                /*margin-bottom: 15px;*/
             }
         }
     }
@@ -434,7 +488,7 @@ header {
         .expertice5-img {
             height: 26px;
             width: 25px;
-            background: url(../images/sprite.svg) -357px -64px no-repeat;
+            background: url(../images/sprite.svg) -359px -64px no-repeat;
         }
 
         li {
@@ -623,7 +677,7 @@ header {
         .sixth-icon {
             height: 26px;
             width: 25px;
-            background: url(../images/sprite.svg) -357px -64px no-repeat;
+            background: url(../images/sprite.svg) -359px -64px no-repeat;
         }
     }
 }
@@ -641,7 +695,7 @@ header {
 
     .faq-subtitle {
         margin-top: 10px;
-        font-size: 18px;
+        font-size: 16px;
         font-family: 'Gotham-Bold';
         color: @b;
     }
@@ -687,6 +741,11 @@ header {
                 }
 
                 a {
+                    display: flex;
+                    align-items: center;
+                    height: 50px;
+                    padding-right: 20px;
+                    line-height: 20px;
                     border-color: #ececec;
                     font-size: 15px;
                     font-family: 'Gotham-Book';
@@ -706,15 +765,30 @@ header {
         }
 
         .icon-accor {
+            display: table;
             background-color: transparent !important;
             color: #344248;
             border-right: 1px solid #ffbe00;
+
+            span {
+                display: -webkit-box;
+                display: -moz-box;
+                display: -ms-flexbox;
+                display: -webkit-flex;
+                display: flex;
+                -webkit-justify-content: center;
+                justify-content: center;
+                -webkit-align-items: center;
+                align-items: center;
+                width: 49px;
+                height: 49px;
+            }
         }
     }
 
     .side-bar {
         .side-tittle {
-            margin-top: 177px !important;
+            margin-top: 210px !important;
             font-size: 18px;
             font-family: 'Gotham-Bold';
             color: @b;

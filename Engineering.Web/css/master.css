@@ -32,6 +32,9 @@
   color: #000;
   font-family: 'Gotham-Book';
 }
+.latest-work .filter li {
+  margin-right: 0;
+}
 .latest-work .filter li a {
   font-size: 16px;
   font-family: 'Gotham-Bold';
@@ -45,7 +48,7 @@ header {
   padding-left: 0;
 }
 header .logo {
-  padding: 30px 0;
+  padding: 40px 0;
 }
 header .logo img {
   display: table !important;
@@ -87,7 +90,7 @@ header .navbar li.languages a .arrow {
   top: 16px;
   height: 12px;
   width: 12px;
-  background: url(../images/sprite.svg) -163px -19px no-repeat;
+  background: url(../images/sprite.svg) -370px -21px no-repeat;
 }
 header .navbar li.languages a .indicator {
   display: none;
@@ -132,17 +135,34 @@ header .top-info .personal-info li:last-child {
   height: 10px !important;
   border: none !important;
 }
-.top-info .personal-info li .call-icon,
+.top-info .personal-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.top-info .personal-info li .phone-icon,
+.top-info .personal-info li .fax-icon,
+.top-info .personal-info li .skype-icon,
 .top-info .personal-info li .email-icon,
 .top-info .personal-info li .time-icon {
   display: inline-block;
   margin-right: 10px;
   vertical-align: middle;
 }
-.top-info .personal-info li .call-icon {
-  height: 15px;
+.top-info .personal-info li .phone-icon {
+  height: 20px;
   width: 15px;
-  background: url(../images/sprite.svg) -29px -16px no-repeat;
+  background: url(../images/sprite.svg) -30px -16px no-repeat;
+}
+.top-info .personal-info li .fax-icon {
+  height: 20px;
+  width: 15px;
+  background: url(../images/sprite.svg) -409px -16px no-repeat;
+}
+.top-info .personal-info li .skype-icon {
+  height: 20px;
+  width: 15px;
+  background: url(../images/sprite.svg) -327px -16px no-repeat;
 }
 .top-info .personal-info li .email-icon {
   height: 15px;
@@ -150,17 +170,23 @@ header .top-info .personal-info li:last-child {
   background: url(../images/sprite.svg) -74px -16px no-repeat;
 }
 .top-info .personal-info li .time-icon {
-  height: 15px;
+  height: 16px;
   width: 15px;
   background: url(../images/sprite.svg) -120px -16px no-repeat;
 }
 .home-slider .slider-title {
+  margin-bottom: 30px !important;
   font-family: 'BrandonGrotesque-Bold';
 }
 .home-slider .slider-content {
+  left: 20px !important;
+  right: 20px !important;
+  white-space: inherit !important;
   font-size: 23px !important;
   font-family: 'Gotham-Light';
   font-weight: 100 !important;
+  margin: 0 auto !important;
+  line-height: 25px !important;
 }
 /*#endregion*/
 /*#region Footer*/
@@ -168,7 +194,8 @@ header .top-info .personal-info li:last-child {
   background-color: #141719 !important;
 }
 .sub-footer .logo-container {
-  padding: 22px 0px;
+  padding: 20px 0;
+  /*padding: 45px 0;*/
 }
 .sub-footer .logo-container .footer-logo {
   width: 100px;
@@ -187,20 +214,37 @@ header .top-info .personal-info li:last-child {
 .sub-footer ul li .icon {
   background-color: #202527;
 }
+.sub-footer ul li .icon .phone-footer-icon {
+  height: 31px;
+  width: 35px;
+  background: url(../images/sprite.svg) -24px -119px no-repeat;
+}
+.sub-footer ul li .icon .fax-footer-icon {
+  height: 31px;
+  width: 35px;
+  background: url(../images/sprite.svg) -191px -119px no-repeat;
+}
 .sub-footer ul li .icon .email-footer-icon {
   height: 31px;
   width: 35px;
   background: url(../images/sprite.svg) -81px -120px no-repeat;
 }
-.sub-footer ul li .icon .call-footer-icon {
+.sub-footer ul li .icon .skype-footer-icon {
   height: 31px;
   width: 35px;
-  background: url(../images/sprite.svg) -24px -119px no-repeat;
+  background: url(../images/sprite.svg) -136px -119px no-repeat;
 }
 .sub-footer ul li h6,
 .sub-footer ul li p {
   font-size: 12px;
   font-family: 'Gotham-Bold';
+}
+.sub-footer ul li h6 {
+  margin-top: 4px;
+  margin-bottom: 0;
+}
+.sub-footer ul li p {
+  /*margin-bottom: 15px;*/
 }
 .rights {
   background-color: #111315 !important;
@@ -335,7 +379,7 @@ header .top-info .personal-info li:last-child {
 .welcome .our-expertise .expertice5-img {
   height: 26px;
   width: 25px;
-  background: url(../images/sprite.svg) -357px -64px no-repeat;
+  background: url(../images/sprite.svg) -359px -64px no-repeat;
 }
 .welcome .our-expertise li {
   margin: 15px 0;
@@ -491,7 +535,7 @@ header .top-info .personal-info li:last-child {
 .our-services .news-content .sixth-icon {
   height: 26px;
   width: 25px;
-  background: url(../images/sprite.svg) -357px -64px no-repeat;
+  background: url(../images/sprite.svg) -359px -64px no-repeat;
 }
 /*#endregion*/
 /*#region FAQ*/
@@ -537,6 +581,11 @@ header .top-info .personal-info li:last-child {
   background-color: #ffbe00 !important;
 }
 .faqs #accordion .panel-default .panel-heading a {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  padding-right: 20px;
+  line-height: 20px;
   border-color: #ececec;
   font-size: 15px;
   font-family: 'Gotham-Book';
@@ -551,9 +600,23 @@ header .top-info .personal-info li:last-child {
   font-family: 'Gotham-Book';
 }
 .faqs #accordion .icon-accor {
+  display: table;
   background-color: transparent !important;
   color: #344248;
   border-right: 1px solid #ffbe00;
+}
+.faqs #accordion .icon-accor span {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  align-items: center;
+  width: 49px;
+  height: 49px;
 }
 .faqs .side-bar .side-tittle {
   margin-top: 177px !important;
